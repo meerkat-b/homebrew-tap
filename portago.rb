@@ -5,21 +5,21 @@
 class Portago < Formula
   desc "Portable, single-binary Go IDE built on Neovim"
   homepage "https://github.com/meerkat-b/portago"
-  version "0.0.4"
+  version "0.0.5"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meerkat-b/portago/releases/download/v0.0.4/portago_0.0.4_darwin_amd64.tar.gz"
-      sha256 "fb16e8c49a347f6bd7f2eeb93620e53a4cbf6f7742df231a743a19870cac1882"
+      url "https://github.com/meerkat-b/portago/releases/download/v0.0.5/portago_0.0.5_darwin_amd64.tar.gz"
+      sha256 "94a8968bfbcc64728f0cfbd3476e259d4388fb85443becd7d16e42fff5ca3327"
 
       define_method(:install) do
         bin.install "portago"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meerkat-b/portago/releases/download/v0.0.4/portago_0.0.4_darwin_arm64.tar.gz"
-      sha256 "ced0f5adde33238006ce8787f59acc9663cef4b7b63aecf3613163ae0532d2e9"
+      url "https://github.com/meerkat-b/portago/releases/download/v0.0.5/portago_0.0.5_darwin_arm64.tar.gz"
+      sha256 "1a8bef563eddf61bc87ed54268269f6a9ea5ec62b847a018185a8d6c1b29dca5"
 
       define_method(:install) do
         bin.install "portago"
@@ -29,15 +29,15 @@ class Portago < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meerkat-b/portago/releases/download/v0.0.4/portago_0.0.4_linux_amd64.tar.gz"
-      sha256 "a97571a0244832b9ed433858f06e75c6e1aa853c6e0e88472b5aae4faf273d72"
+      url "https://github.com/meerkat-b/portago/releases/download/v0.0.5/portago_0.0.5_linux_amd64.tar.gz"
+      sha256 "c28b7c882116b4f8a9308d1a9ad2d017ce969e511850b338a76b916b005c2e13"
       define_method(:install) do
         bin.install "portago"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meerkat-b/portago/releases/download/v0.0.4/portago_0.0.4_linux_arm64.tar.gz"
-      sha256 "d8a8effc7424cf9b23db2b5e2dceefabead2525e6bb1532a83f2b266c487bc8e"
+      url "https://github.com/meerkat-b/portago/releases/download/v0.0.5/portago_0.0.5_linux_arm64.tar.gz"
+      sha256 "911dc9b8f259d0ffd83bda8d4969f30787e1311996447099550dff60f0afea7b"
       define_method(:install) do
         bin.install "portago"
       end
