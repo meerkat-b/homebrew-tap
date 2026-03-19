@@ -5,21 +5,21 @@
 class Burrow < Formula
   desc "Portable, single-binary Go IDE built on Neovim"
   homepage "https://github.com/meerkat-b/burrow"
-  version "0.0.6"
+  version "0.0.7"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.6/burrow_0.0.6_darwin_amd64.tar.gz"
-      sha256 "b3e6de8cc336a9b66a23de75f4db940e56267e055f8cf1c07d86f1296af5c1df"
+      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.7/burrow_0.0.7_darwin_amd64.tar.gz"
+      sha256 "c5f10791ab18a9843ce9ea7466989bf7acff041a552a862d35e7aa0d37572c38"
 
       define_method(:install) do
         bin.install "burrow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.6/burrow_0.0.6_darwin_arm64.tar.gz"
-      sha256 "5fdcfc34928ab916ead648fa68331ebfac7b253325c50c6da1084ccff9d16541"
+      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.7/burrow_0.0.7_darwin_arm64.tar.gz"
+      sha256 "943c2ce058156a8d37f1cf9779d0cd26e9702f5f5a8ba0d3d35b70aba258b4dd"
 
       define_method(:install) do
         bin.install "burrow"
@@ -29,15 +29,15 @@ class Burrow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.6/burrow_0.0.6_linux_amd64.tar.gz"
-      sha256 "2d5158905df1a4af9633e57f4b9c4cd1dbc89feff8f2956233ac70ae95593f18"
+      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.7/burrow_0.0.7_linux_amd64.tar.gz"
+      sha256 "e60218fc487d7ec76f96f872cce993f8d7c4dc5ef25c7536d335cd6a30f8505d"
       define_method(:install) do
         bin.install "burrow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.6/burrow_0.0.6_linux_arm64.tar.gz"
-      sha256 "13e68e7343a034a88e9118cdcc07cc968fc2955c0c5c6f6fbeb022459a09acaf"
+      url "https://github.com/meerkat-b/burrow/releases/download/v0.0.7/burrow_0.0.7_linux_arm64.tar.gz"
+      sha256 "417b82bf4620d888a4541a62ffb78b80a7f8e4abddcf23328c655ec31cd370bd"
       define_method(:install) do
         bin.install "burrow"
       end
